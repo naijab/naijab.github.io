@@ -1,7 +1,7 @@
 ---
 title: บทความทดลองจ้า
 description: 'อยากเขียนดีๆ ไหนละความรัก'
-cover: './images/jojo.jpg'
+cover: '~/assets/images/jojo.jpg'
 tags: ['react.js', 'web']
 ---
 
