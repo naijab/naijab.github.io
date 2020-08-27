@@ -11,3 +11,31 @@ button:focus {
     outline: 0;
   }
 }
+
+.nuxt-content h1 {
+  @apply text-4xl
+}
+
+.nuxt-content h2 {
+  @apply text-3xl
+}
+
+.nuxt-content h3 {
+  @apply text-2xl
+}
+
+.nuxt-content h4 {
+  @apply text-xl
+}
+
+.nuxt-content p {
+  @apply mb-2
+}
+
+.nuxt-content blockquote {
+  @apply border-l-4;
+  @apply border-red-500;
+  @apply p-2;
+  @apply mt-2;
+  @apply mb-2;
+}
