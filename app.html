@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" {{ HTML_ATTRS }}>
+<html {{ HTML_ATTRS }}>
 
 <head {{ HEAD_ATTRS }}>
   {{ HEAD }}
@@ -8,32 +8,22 @@
 <body {{ BODY_ATTRS }}>
   {{ APP }}
 
-  <script>
-    (function () {
-        try {
-          // Checks for the color scheme of the device.
-          // In this case it checks for anything that is not light theme.
-          var media = window.matchMedia("not all and (prefers-color-scheme: light)"),
-            body = document.body;
-          if (localStorage.getItem("theme") == "dark") {
-            body.setAttribute("data-theme", "dark");
-          } else if (localStorage.getItem("theme") == "light") {
-            body.setAttribute("data-theme", "light");
-          } else if (media.matches) {
-            body.setAttribute("data-theme", "dark");
-            localStorage.setItem("theme", "dark");
-          }
-          media.addListener(function () {
-            if (media.matches) {
-              body.setAttribute("data-theme", "dark");
-              localStorage.setItem("theme", "dark");
-            } else {
-              body.setAttribute("data-theme", "light");
-              localStorage.setItem("theme", "light");
-            }
-          });
-        } catch (err) { }
-      })();
+  <script type="text/javascript">
+    (function() {
+
+      var body = document.body
+
+      if (!localStorage.getItem("theme")) {
+        localStorage.setItem("theme", 'light')
+      }
+
+      if (localStorage.getItem("theme") == "dark") {
+        body.setAttribute("data-theme", "dark");
+      } else {
+        body.setAttribute("data-theme", "light");
+      }
+
+    })();
   </script>
 </body>
 

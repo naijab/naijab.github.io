@@ -1,6 +1,26 @@
 module.exports = {
-  theme: {},
-  variants: {},
+  theme: {
+    darkSelector: '.dark-mode',
+  },
+  variants: {
+    backgroundColor: [
+      'dark',
+      'dark-hover',
+      'dark-group-hover',
+      'dark-even',
+      'dark-odd',
+      'hover',
+      'responsive',
+    ],
+    borderColor: [
+      'dark',
+      'dark-focus',
+      'dark-focus-within',
+      'hover',
+      'responsive',
+    ],
+    textColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive'],
+  },
   plugins: [require('tailwindcss-dark-mode')()],
   purge: {
     enabled: process.env.NODE_ENV === 'production',
@@ -11,6 +31,8 @@ module.exports = {
       'plugins/**/*.js',
       'nuxt.config.js',
     ],
-    whitelist: ['mode-dark'],
+    options: {
+      whitelist: ['dark-mode'],
+    },
   },
 }

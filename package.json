@@ -15,6 +15,7 @@
   "dependencies": {
     "@nuxt/content": "^1.5.0",
     "@nuxtjs/axios": "^5.12.0",
+    "@nuxtjs/color-mode": "^1.0.3",
     "gh-pages": "^3.1.0",
     "nuxt": "^2.14.0",
     "tailwindcss-dark-mode": "^1.1.6"

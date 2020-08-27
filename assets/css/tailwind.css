@@ -1,3 +1,13 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+button:focus {
+  outline: 0;
+}
+
+@media (hover: hover) {
+  button:hover {
+    outline: 0;
+  }
+}

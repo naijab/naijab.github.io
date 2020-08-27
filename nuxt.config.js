@@ -78,22 +78,15 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
+    '@nuxtjs/color-mode',
     '@nuxtjs/eslint-module',
-    // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
-    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
   ],
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    // Doc: https://github.com/nuxt/content
-    '@nuxt/content',
-  ],
+  modules: ['@nuxtjs/axios', '@nuxt/content'],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
