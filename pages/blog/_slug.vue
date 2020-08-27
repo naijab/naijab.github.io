@@ -9,6 +9,8 @@
 </template>
 
 <script>
+// FIXME: Cover image not show
+
 export default {
   async asyncData({ $content, params }) {
     const post = await $content('posts', params.slug).fetch()
