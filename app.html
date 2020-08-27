@@ -7,24 +7,6 @@
 
 <body {{ BODY_ATTRS }}>
   {{ APP }}
-
-  <script type="text/javascript">
-    (function() {
-
-      var body = document.body
-
-      if (!localStorage.getItem("theme")) {
-        localStorage.setItem("theme", 'light')
-      }
-
-      if (localStorage.getItem("theme") == "dark") {
-        body.setAttribute("data-theme", "dark");
-      } else {
-        body.setAttribute("data-theme", "light");
-      }
-
-    })();
-  </script>
 </body>
 
 </html>
