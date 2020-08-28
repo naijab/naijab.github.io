@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/tag/react.js", {data:[],fetch:[],mutations:void 0});
