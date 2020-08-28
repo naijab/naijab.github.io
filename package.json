@@ -10,7 +10,7 @@
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
-    "deploy": "yarn generate && gh-pages -d dist"
+    "deploy": "yarn generate && gh-pages -d dist --dotfiles"
   },
   "dependencies": {
     "@nuxt/content": "^1.5.0",
