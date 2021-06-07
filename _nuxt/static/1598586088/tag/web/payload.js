@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/tag/web", {data:[],fetch:[],mutations:void 0});
