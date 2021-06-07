@@ -16,20 +16,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      countDown: 10,
-    }
-  },
-
-  // TODO: Fetch Blog List from markdown
   computed: {
     theme() {
       return this.$colorMode.value === 'light' ? 'light' : 'dark'
     },
-  },
-  created() {
-    this.countDownTimer()
   },
   methods: {
     switchTheme() {
@@ -37,18 +27,8 @@ export default {
         this.$colorMode.value === 'light' ? 'dark' : 'light'
     },
     goToBlog() {
-      this.location.href = 'https://naijab.medium.com/'
-    },
-    countDownTimer() {
-      if (this.countDown === 0) {
-        this.goToBlog()
-        return
-      }
-      if (this.countDown > 0) {
-        setTimeout(() => {
-          this.countDown -= 1
-          this.countDownTimer()
-        }, 1000)
+      if (window) {
+        window.location.href = 'https://naijab.medium.com/'
       }
     },
   },
