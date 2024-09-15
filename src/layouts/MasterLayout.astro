@@ -2,6 +2,9 @@
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import LogoWithText from '../components/nav/LogoWithText.astro';
+import Footer from '../components/Footer.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import Hero from '../components/Hero.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -14,45 +17,23 @@ const { title, description } = Astro.props;
 	</head>
 
 	<body class="bg-secondary">
-
-		<nav class="fixed bg-slate-950 w-full">
+		<nav class="fixed top-0 bg-slate-950 w-full">
 			<div class="p-4 max-w-3xl mx-auto">
 				<LogoWithText />
 			</div>
 		</nav>
 
-		<br/>
-		<br/>
-		<br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/><br/>
-		<br/>
+		<div class="flex-row">
+			<main class="mt-20 px-4 pb-4 max-w-3xl mx-auto">
+				<SectionTitle title='hello' time={0.3} />
 
-		hello
-		<!-- <Footer /> -->
+				<Hero name='Nattapon Pondongnok' desc="Full stack dev & Gym guy, Thailand" />
+
+				<SectionTitle title='blog ls' time={1} />
+
+			</main>
+
+			<Footer />
+		</div>
 	</body>
 </html>

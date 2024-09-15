@@ -2,9 +2,9 @@
 const today = new Date();
 ---
 
-<footer>
-	&copy; {today.getFullYear()} naijab.com. All rights reserved.
-	<div class="social-links">
+<footer class="bottom-0 w-full bg-slate-950 text-white p-6 flex-row justify-center items-center text-center">
+
+	<div class="p-4 flex items-center justify-center gap-4">
 		<a href="https://web.facebook.com/naijabcom" target="_blank">
 			<span class="sr-only">Follow naijab on facebook</span>
 			<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/facebook"
@@ -30,25 +30,6 @@ const today = new Date();
 				></path></svg>
 		</a>
 	</div>
+
+	&copy; {today.getFullYear()} naijab.com. All rights reserved.
 </footer>
-<style>
-	footer {
-		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
-		text-align: center;
-	}
-	.social-links {
-		display: flex;
-		justify-content: center;
-		gap: 1em;
-		margin-top: 1em;
-	}
-	.social-links a {
-		text-decoration: none;
-		color: rgb(var(--gray));
-	}
-	.social-links a:hover {
-		color: rgb(var(--gray-dark));
-	}
-</style>

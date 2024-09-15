@@ -11,6 +11,10 @@ export default {
         secondary: "#070F2B",
         highlight: "#FBA834",
       },
+      fontFamily: {
+        thai: ["Noto Sans Thai Looped", "sans-serif"],
+        eng: ["Inconsolata", "monospace"],
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

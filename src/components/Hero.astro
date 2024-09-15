@@ -1,0 +1,18 @@
+---
+interface Props {
+	name: string;
+	desc: string;
+}
+
+const {name, desc} = Astro.props;
+---
+
+<div class="flex items-stretch gap-4 p-2 rounded-lg border border-dashed border-slate-700 justify-between text-xs">
+    <div class="bg-white w-1/6 p-4">
+        avartar
+    </div>
+    <div class="w-full">
+        <h1 class="uppercase w-full text-2xl font-semibold text-highlight">{name}</h1>
+        <div class="text-md text-gray-300">{desc}</div>
+    </div>
+</div>

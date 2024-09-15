@@ -1,0 +1,13 @@
+---
+interface Props {
+	title: string;
+	time: number;
+}
+
+const {title, time} = Astro.props;
+---
+
+<div class="my-4 flex justify-between text-xs">
+    <span class="text-gray-400 font-incon">> {title}</span>
+    <span class="text-gray-500">{time}ms</span>
+</div>
