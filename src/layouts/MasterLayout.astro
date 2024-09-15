@@ -1,12 +1,7 @@
 ---
-import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import LogoWithText from '../components/nav/LogoWithText.astro';
 import Footer from '../components/Footer.astro';
-import SectionTitle from '../components/SectionTitle.astro';
-import Hero from '../components/Hero.astro';
-
-type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description } = Astro.props;
 ---
@@ -25,14 +20,8 @@ const { title, description } = Astro.props;
 
 		<div class="flex-row">
 			<main class="mt-20 px-4 pb-4 max-w-3xl mx-auto">
-				<SectionTitle title='hello' time={0.3} />
-
-				<Hero name='Nattapon Pondongnok' desc="Full stack dev & Gym guy, Thailand" />
-
-				<SectionTitle title='blog ls' time={1} />
-
+				<slot />
 			</main>
-
 			<Footer />
 		</div>
 	</body>

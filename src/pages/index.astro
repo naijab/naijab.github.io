@@ -1,6 +1,13 @@
 ---
+import Hero from '../components/Hero.astro'
+import SectionTitle from '../components/SectionTitle.astro'
 import MasterLayout from '../layouts/MasterLayout.astro'
 ---
 
-<MasterLayout>
+<MasterLayout title='naijab.com' description='just home page'>
+    <SectionTitle title='hello' time={0.3} />
+
+	<Hero name='Nattapon Pondongnok' desc="Full stack dev & Gym guy, Thailand" />
+
+	<SectionTitle title='blog ls' time={1} />
 </MasterLayout>
