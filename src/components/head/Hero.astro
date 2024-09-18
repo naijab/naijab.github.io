@@ -1,0 +1,23 @@
+---
+interface Props {
+	name: string;
+	desc: string;
+    avatarUrl: string
+}
+
+const {name, desc, avatarUrl} = Astro.props;
+---
+
+<div class="flex justify-center w-full rounded-lg border border-dashed border-slate-700 ">
+
+    <div class="flex items-stretch gap-4 text-center py-6">
+        <div class="w-2/6 flex justify-center">
+            <img src={avatarUrl} class="h-20 rounded-full object-cover" alt={name} />
+        </div>
+        <div class="w-full flex flex-col text-left justify-center">
+            <h1 class="uppercase text-2xl font-bold bg-clip-text bg-gradient-to-r from-primary to-highlight inline-block text-transparent">{name}</h1>
+            <div class="text-xs text-gray-300">{desc}</div>
+        </div>
+    </div>
+
+</div>

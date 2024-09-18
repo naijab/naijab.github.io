@@ -1,13 +1,67 @@
 ---
-import Hero from '../components/Hero.astro'
+import PostItem from '../components/blog/PostItem.astro'
+import Hero from '../components/head/Hero.astro'
 import SectionTitle from '../components/SectionTitle.astro'
 import MasterLayout from '../layouts/MasterLayout.astro'
+
+let blogs = [
+	{
+		title: "Spring boot new 3.2 very long title test long title description",
+		tags: ["java", "spring-boot"],
+		date: "12 dec 2024",
+		coverUrl: "https://placehold.co/400",
+		url:"/java/spring-init",
+	},
+	{
+		title: "Spring boot new 3.2",
+		tags: ["java", "spring-boot"],
+		date: "12 dec 2024",
+		coverUrl: "https://placehold.co/400",
+		url:"/java/spring-init",
+	},
+	{
+		title: "Spring boot new 3.2",
+		tags: ["java", "spring-boot"],
+		date: "12 dec 2024",
+		coverUrl: "https://placehold.co/400",
+		url:"/java/spring-init",
+	},
+	{
+		title: "Spring boot new 3.2",
+		tags: ["java", "spring-boot"],
+		date: "12 dec 2024",
+		coverUrl: "https://placehold.co/400",
+		url:"/java/spring-init",
+	},
+	{
+		title: "Spring boot new 3.2",
+		tags: ["java", "spring-boot"],
+		date: "12 dec 2024",
+		coverUrl: "https://placehold.co/400",
+		url:"/java/spring-init",
+	},
+	{
+		title: "Spring boot new 3.2",
+		tags: ["java", "spring-boot"],
+		date: "12 dec 2024",
+		coverUrl: "https://placehold.co/400",
+		url:"/java/spring-init",
+	}
+]
+
 ---
 
 <MasterLayout title='naijab.com' description='just home page'>
     <SectionTitle title='hello' time={0.3} />
 
-	<Hero name='Nattapon Pondongnok' desc="Full stack dev & Gym guy, Thailand" />
+	<Hero
+		name='Nattapon Pondongnok'
+		desc="Full stack dev, Gym guy, Thailand 🇹🇭"
+		avatarUrl='https://placehold.co/400'
+	/>
 
 	<SectionTitle title='blog ls' time={1} />
+
+	{blogs.map(post => <PostItem {...post} />)}
+
 </MasterLayout>
