@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import LogoWithText from '../components/nav/LogoWithText.astro';
 import Footer from '../components/Footer.astro';
+import Nav from '../components/nav/Nav.astro';
 
 const { title, description } = Astro.props;
 ---
@@ -12,11 +13,7 @@ const { title, description } = Astro.props;
 	</head>
 
 	<body class="bg-secondary">
-		<nav class="fixed top-0 bg-slate-950 w-full">
-			<div class="p-4 max-w-3xl mx-auto">
-				<LogoWithText />
-			</div>
-		</nav>
+		<Nav/>
 
 		<div class="flex-row">
 			<main class="mt-20 px-4 pb-4 max-w-3xl mx-auto">
