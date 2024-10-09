@@ -1,7 +1,6 @@
 ---
 import PostItem from '../components/blog/PostItem.astro'
 import Hero from '../components/head/Hero.astro'
-import SectionTitle from '../components/SectionTitle.astro'
 import MasterLayout from '../layouts/MasterLayout.astro'
 
 let blogs = [
@@ -54,8 +53,8 @@ let blogs = [
 <MasterLayout title='naijab.com' description='just home page'>
 	<Hero />
 
-	<SectionTitle title='blog ls' time={1} />
-
-	{blogs.map(post => <PostItem {...post} />)}
+	<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 mb-4">
+		{blogs.map(post => <PostItem {...post} />)}
+	</div>
 
 </MasterLayout>
