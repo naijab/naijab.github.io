@@ -1,7 +1,7 @@
 ---
 import BaseHead from '../components/head/BaseHead.astro';
 import Footer from '../components/footer/Footer.astro';
-import Nav from '../components/nav/Nav.astro';
+import Nav from '../components/nav/Nav';
 
 const { title, description } = Astro.props;
 ---
@@ -12,7 +12,7 @@ const { title, description } = Astro.props;
 	</head>
 
 	<body class="bg-darkBlack">
-		<Nav/>
+		<Nav client:only="solid"/>
 
 		<div class="flex-row">
 			<main class="mt-20 px-4 pb-4 max-w-3xl mx-auto">
