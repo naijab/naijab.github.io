@@ -11,6 +11,8 @@ export default {
         secondary: "#070F2B",
         third: "#3662FB",
         highlight: "#FBA834",
+        purple: "#B04AFF",
+        darkBlack: "#151515",
       },
       fontFamily: {
         thai: ["Noto Sans Thai Looped", "sans-serif"],
