@@ -2,8 +2,8 @@
 
 ## How to run
 - install node.js version 18 or later
-- `yarn` or `npm install`
-- `yarn dev` to run dev mode
+- `bun install` to install packages
+- `bun dev` to start the development server
 
 ## Credit
 

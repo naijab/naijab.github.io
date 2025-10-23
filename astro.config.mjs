@@ -10,4 +10,7 @@ import solidJs from "@astrojs/solid-js";
 export default defineConfig({
   site: "https://naijab.com",
   integrations: [mdx(), sitemap(), tailwind(), solidJs()],
+  server: {
+    allowedHosts: ["x.naijab.com"],
+  },
 });
