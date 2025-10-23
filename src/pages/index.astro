@@ -1,60 +1,58 @@
 ---
-import PostItem from '../components/blog/PostItem.astro'
-import Hero from '../components/head/Hero.astro'
-import MasterLayout from '../layouts/MasterLayout.astro'
+import PostItem from "../components/blog/PostItem.astro";
+import Hero from "../components/head/Hero.astro";
+import MasterLayout from "../layouts/MasterLayout.astro";
 
 let blogs = [
-	{
-		title: "Spring boot new 3.2 very long title test long title description",
-		tags: ["java", "spring-boot"],
-		date: "12 dec 2024",
-		coverUrl: "https://placehold.co/400",
-		url:"/java/spring-init",
-	},
-	{
-		title: "Spring boot new 3.2",
-		tags: ["java", "spring-boot"],
-		date: "12 dec 2024",
-		coverUrl: "https://placehold.co/400",
-		url:"/java/spring-init",
-	},
-	{
-		title: "Spring boot new 3.2",
-		tags: ["java", "spring-boot"],
-		date: "12 dec 2024",
-		coverUrl: "https://placehold.co/400",
-		url:"/java/spring-init",
-	},
-	{
-		title: "Spring boot new 3.2",
-		tags: ["java", "spring-boot"],
-		date: "12 dec 2024",
-		coverUrl: "https://placehold.co/400",
-		url:"/java/spring-init",
-	},
-	{
-		title: "Spring boot new 3.2",
-		tags: ["java", "spring-boot"],
-		date: "12 dec 2024",
-		coverUrl: "https://placehold.co/400",
-		url:"/java/spring-init",
-	},
-	{
-		title: "Spring boot new 3.2",
-		tags: ["java", "spring-boot"],
-		date: "12 dec 2024",
-		coverUrl: "https://placehold.co/400",
-		url:"/java/spring-init",
-	}
-]
-
+  {
+    title: "Spring boot new 3.2 very long title test long title description",
+    tags: ["java", "spring-boot"],
+    date: "12 dec 2024",
+    coverUrl: "https://placehold.co/400",
+    url: "/java/spring-init",
+  },
+  {
+    title: "Spring boot new 3.2",
+    tags: ["java", "spring-boot"],
+    date: "12 dec 2024",
+    coverUrl: "https://placehold.co/400",
+    url: "/java/spring-init",
+  },
+  {
+    title: "Spring boot new 3.2",
+    tags: ["java", "spring-boot"],
+    date: "12 dec 2024",
+    coverUrl: "https://placehold.co/400",
+    url: "/java/spring-init",
+  },
+  {
+    title: "Spring boot new 3.2",
+    tags: ["java", "spring-boot"],
+    date: "12 dec 2024",
+    coverUrl: "https://placehold.co/400",
+    url: "/java/spring-init",
+  },
+  {
+    title: "Spring boot new 3.2",
+    tags: ["java", "spring-boot"],
+    date: "12 dec 2024",
+    coverUrl: "https://placehold.co/400",
+    url: "/java/spring-init",
+  },
+  {
+    title: "Spring boot new 3.2",
+    tags: ["java", "spring-boot"],
+    date: "12 dec 2024",
+    coverUrl: "https://placehold.co/400",
+    url: "/java/spring-init",
+  },
+];
 ---
 
-<MasterLayout title='naijab.com' description='just home page'>
-	<Hero />
+<MasterLayout title="naijab.com" description="just home page">
+  <Hero />
 
-	<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 mb-4">
-		{blogs.map(post => <PostItem {...post} />)}
-	</div>
-
+  <div class="mb-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+    {blogs.map((post) => <PostItem {...post} />)}
+  </div>
 </MasterLayout>

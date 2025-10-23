@@ -13,15 +13,16 @@ const Nav = () => {
 
   const handleScroll = (event: any) => {
     if (window.scrollY >= 60) {
-      navRef.className = "fixed top-0 bg-opacity-80 backdrop-blur-sm w-full bg-black transition-all duration-200"
+      navRef.className =
+        "fixed top-0 bg-opacity-80 backdrop-blur-sm w-full bg-black transition-all duration-200";
     } else {
-      navRef.className = "fixed top-0 w-full"
+      navRef.className = "fixed top-0 w-full";
     }
   };
 
   return (
     <nav ref={navRef!} class="">
-      <div class="px-4 py-4 mx-auto max-w-4xl xl:max-w-4xl">
+      <div class="mx-auto max-w-4xl px-4 py-4 xl:max-w-4xl">
         <div class="flex justify-between">
           <a href="/">
             <svg
@@ -82,9 +83,9 @@ const Nav = () => {
               />
             </svg>
           </a>
-          <a href="/search" class="flex justify-center items-center">
+          <a href="/search" class="flex items-center justify-center">
             <svg
-              class="stroke-current text-white w-8 h-8"
+              class="h-8 w-8 stroke-current text-white"
               viewBox="0 0 32 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

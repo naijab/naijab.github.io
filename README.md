@@ -1,6 +1,7 @@
 # naijab.com
 
 ## How to run
+
 - install node.js version 18 or later
 - `bun install` to install packages
 - `bun dev` to start the development server
